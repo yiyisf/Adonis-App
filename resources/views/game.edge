@@ -1,0 +1,7 @@
+@if(!guessedNumber)
+  <p>请输入一个数字在url中，格式为<code>?number=<num></code></p>
+@elseif(guessedNumber === randomNumber)
+  <h2>猜中了</h2>
+@else
+  <h2>您没猜中，正确数字是 {{randomNumber}}</h2>
+@endif
